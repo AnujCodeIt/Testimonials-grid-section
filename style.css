@@ -1,0 +1,135 @@
+:root {
+  /* Primary */
+  --violet: hsl(263, 55%, 52%);
+  --grayish-blue: hsl(217, 19%, 35%);
+  --blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Neutral */
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  /* font-weight */
+  --font-normal: 500;
+  --font-bold: 600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed";
+  font-size: 1.3rem;
+
+  margin: 0 auto;
+  width: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grayish-blue);
+}
+
+.container {
+  margin: 8em;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+  grid-template-areas: "daniel daniel jonathan kira " "jeanette patrick patrick kira";
+}
+
+.testimonial-daniel {
+  grid-area: daniel;
+  /* background-image: url(./images/bg-pattern-quotation.svg); */
+  background-color: var(--violet);
+}
+
+.testimonial-jonathan {
+  grid-area: jonathan;
+  background-color: var(--grayish-blue);
+}
+
+.testimonial-jeanette {
+  grid-area: jeanette;
+  background-color: var(--white);
+}
+
+.testimonial-patrick {
+  grid-area: patrick;
+  background-color: var(--blackish-blue);
+}
+
+.testimonial-kira {
+  grid-area: kira;
+  background-color: var(--white);
+}
+
+.testimonial {
+  padding: 3.6rem;
+  border-radius: 5px;
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  margin-bottom: 2.4rem;
+}
+
+.person-img {
+  display: block;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.person {
+}
+
+.name {
+  font-weight: var(--font-bold);
+  margin-bottom: 0.5rem;
+}
+
+.education {
+}
+
+.main-para {
+  font-weight: var(--font-bold);
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.sub-para {
+  font-size: 1.6rem;
+}
+
+/* Text colors */
+.color--grey {
+  color: var(--light-gray);
+}
+
+.color--white {
+  color: var(--white);
+}
+
+.color--black-blue {
+  color: var(--blackish-blue);
+}
+
+.color--grey-blue {
+  color: var(--grayish-blue);
+}
+
+
+.container-shadow{
+    box-shadow: 0px 5px 10px hsla(219, 29%, 14%, 0.4);
+}

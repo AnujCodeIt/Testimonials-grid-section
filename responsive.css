@@ -1,0 +1,10 @@
+@media (max-width: 46em) {
+  .container {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (5, auto);
+
+    grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira";
+  }
+}
