@@ -48,7 +48,9 @@ body {
 
 .testimonial-daniel {
   grid-area: daniel;
-  /* background-image: url(./images/bg-pattern-quotation.svg); */
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 75% 15%;
   background-color: var(--violet);
 }
 
